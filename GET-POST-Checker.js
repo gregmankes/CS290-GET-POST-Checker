@@ -28,7 +28,7 @@ app.post('/', function(req,res){
     bodyParams.push({'name':p,'value':req.body[p]})
   }
   var context = {};
-  context.dataList = bodyParams;
+  context.list = bodyParams;
   context.type = 'POST';
   res.render('checker', context);
 });
